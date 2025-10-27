@@ -1,0 +1,1 @@
+// Alpine.js scripts will be added here
