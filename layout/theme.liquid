@@ -9,6 +9,11 @@
 <body>
     <header>
         <nav>
+            <div class="logo-container">
+                <a href="/">
+                    <img src="{{ 'btlpop-rgb-UC-hor-filled.svg' | asset_url }}" alt="BTLPOP Logo">
+                </a>
+            </div>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/collections/all">Shop</a></li>
@@ -20,7 +25,10 @@
         {{ content_for_layout }}
     </main>
     <footer>
-        <p>&copy; {{ 'now' | date: '%Y' }} BottlePop</p>
+        <div class="footer-logo">
+            <img src="{{ 'btlpop-rgb-white-hor-filled.svg' | asset_url }}" alt="BTLPOP Logo">
+        </div>
+        <p>&copy; {{ 'now' | date: '%Y' }} BottlePop. All rights reserved.</p>
     </footer>
     <script src="{{ 'alpine.js' | asset_url }}"></script>
 </body>
